@@ -12,6 +12,7 @@
 
 
 <script>
+
 import SearchBox from './components/Searchbox.vue'
 
 export default {
