@@ -1,18 +1,13 @@
 
 <template>
   <el-container>
-    <el-header>
-      <!-- <SearchBox/> -->
-    </el-header>
+    <el-aside >      
+  <!-- <SearchBox/> -->
+  </el-aside>
     <el-main>
       <PopularPage/>
     </el-main>
-    <el-footer>
-    </el-footer>
-
-
   </el-container>
-
 </template>
 
 

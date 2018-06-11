@@ -8,17 +8,19 @@
   v-debounce="200"
   clearable @change="fetch_data();">
 </el-input> -->
-
+<h2>Добро пожаловать в Movie Database API. Чтобы найти фильм прошу п</h2>
 <el-autocomplete
   v-model="input"
   :fetch-suggestions="fetch_data"
+  :trigger-on-focus=true
+  
 ></el-autocomplete>
-<el-row  v-if="results.length > 0">
+<!-- <el-row  v-if="results.length > 0">
   <el-col :span="24" v-for="(result, index) in results[0]" :key="result.id">
         {{result.title}}
         Ранк из 10 : {{result.vote_average}} из {{result.vote_count}} проголосовавших  
   </el-col>
-</el-row>
+</el-row> -->
 </div>
 
 </template>
@@ -76,18 +78,6 @@ export default {
 </script>
 
 <style>
- .el-col {
-    border-radius: 4px;
-  }
-  .grid-content {
-    border-radius: 4px;
-    min-height: 36px;
-  }
-  .el-row {
-    margin-bottom: 20px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+
 
 </style>

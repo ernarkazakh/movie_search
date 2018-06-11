@@ -1,5 +1,4 @@
 <template>
-<div>
 <el-row  v-if="results.length > 0">
   <el-col :span="8" v-for="(result, index) in results[0]" :key="index">
     <div class="grid-content bg-purple">
@@ -7,12 +6,14 @@
         {{result.title}}
         <br>
         <br>
-
-        {{result.overview}}
+        {{result.poster_path}}
+        <!-- {{result.overview}} -->
+        {{url}}
+        <img v-bind:src="url + result.poster_path    ">
     </div>
   </el-col>
 </el-row>
-</div>
+
 </template>
 
 <script>
@@ -25,6 +26,7 @@ var api_key = "207c757c9a4417cbfd27b7de3ffb7080"
 export default {
     data() {
     return {
+      url: 'https://image.tmdb.org/t/p/w300',
       results: []
     }
   },
@@ -43,9 +45,6 @@ export default {
                 console.log(error)
             })
         },
-    methods: function(){
-        
-    }
     
     
 }
