@@ -1,6 +1,8 @@
-# movie_database
 
-> A Vue.js project
+## A movie database project that I created for myself. Built using absolutely amazing Vue
+
+<img src='./src/assets/readme/first_screen.png?raw-true&s=100' height='400'>
+
 
 ## Build Setup
 
@@ -18,4 +20,18 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Done so far:
+```
+
+
+
+```
+
+## ROADMAP:
+
+```
+1) Add analytics tool that will take in
+2)
+3)
+

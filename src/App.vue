@@ -1,4 +1,3 @@
-
 <template>
   <el-container>
     <el-aside >      
@@ -9,12 +8,6 @@
     </el-main>
   </el-container>
 </template>
-
-
-
-
-
-
 
 
 <script>
