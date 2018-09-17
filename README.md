@@ -1,5 +1,6 @@
 
 ## A movie database project that I created for myself. Built using absolutely amazing Vue
+[![Build Status](https://travis-ci.com/ernarkazakh/movie_search.svg?branch=master)](https://travis-ci.com/ernarkazakh/movie_search)
 
 <img src='./src/assets/readme/first_screen.png?raw-true&s=100' height='400'>
 
