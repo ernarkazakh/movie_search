@@ -1,26 +1,13 @@
 
 <template>
 <div>
-  
-    <!-- <el-input
-  placeholder="Введите название фильма"
-  v-model.lazy="input"
-  v-debounce="200"
-  clearable @change="fetch_data();">
-</el-input> -->
-<h2>Добро пожаловать в Movie Database API. Чтобы найти фильм прошу п</h2>
+<h2>Добро пожаловать в Movie Database API. Чтобы найти фильм прошу ввести слово</h2>
 <el-autocomplete
   v-model="input"
   :fetch-suggestions="fetch_data"
   :trigger-on-focus=true
-  
+  :debounce="300"
 ></el-autocomplete>
-<!-- <el-row  v-if="results.length > 0">
-  <el-col :span="24" v-for="(result, index) in results[0]" :key="result.id">
-        {{result.title}}
-        Ранк из 10 : {{result.vote_average}} из {{result.vote_count}} проголосовавших  
-  </el-col>
-</el-row> -->
 </div>
 
 </template>
@@ -53,6 +40,7 @@ export default {
           })
             .then(function(response){
                 that.results.push(response.data.results)
+                return that.results
                 // console.log(results)
             })
             .catch(function(error){
@@ -63,17 +51,17 @@ export default {
             for (var i = 0; i < this.results[0].length> 1;i++){
 
             }
-            
+
         },
-       
+
 
             // display_data: function(keyword){
 
 
             // }
-      
+
   },
-  
+
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <el-container>
-    <el-aside >      
-  <!-- <SearchBox/> -->
+    <el-aside >
+  <SearchBox/>
   </el-aside>
     <el-main>
       <PopularPage/>
